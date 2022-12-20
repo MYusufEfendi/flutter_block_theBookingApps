@@ -1,4 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/widget/disable_button.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/widget/primary_button.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/widget/secondary_button.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/widget/square_checkbox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -102,6 +107,34 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            PrimaryButton(
+              type: PrimaryButtonType.type2,
+              onPressed: () {},
+              text: "Download",
+              width: 100,
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            SecondaryButton(
+              type: SecondaryButtonType.type2,
+              onPressed: () {},
+              text: "Download",
+              width: 100,
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            DisableButton(
+              type: DisableButtonType.type2,
+              onPressed: () {},
+              text: "Disabled Button",
+              width: 146,
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            SquareCheckbox(onTap: () {  },)
           ],
         ),
       ),
