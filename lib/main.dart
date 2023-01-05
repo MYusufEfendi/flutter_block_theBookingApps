@@ -6,6 +6,7 @@ import 'package:flutter_bloc_thebooking_apps/presentation/widget/disable_button.
 import 'package:flutter_bloc_thebooking_apps/presentation/widget/primary_button.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/widget/secondary_button.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/widget/square_checkbox.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,17 +14,22 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        fontFamily: 'Poppins',
-        primarySwatch: Colors.blue,
-      ),
-      home: const OnboardingPage(),
+    return ScreenUtilInit(
+      designSize: const Size(360, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context,child) {
+        return MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            fontFamily: 'Poppins',
+            primarySwatch: Colors.blue,
+          ),
+          home: const OnboardingPage(),
+        );
+      }
     );
   }
 }

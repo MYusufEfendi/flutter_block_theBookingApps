@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_thebooking_apps/extension/double_extension.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/component/onBoarding_indicator.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/component/onboarding_button.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/component/onboarding_title.dart';
+import 'package:flutter_bloc_thebooking_apps/util/util.dart';
 import 'component/onboarding_image.dart';
 import 'onboarding_cubit.dart';
 import 'onboarding_state.dart';

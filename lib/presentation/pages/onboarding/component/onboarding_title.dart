@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_thebooking_apps/config/config.dart';
-import 'package:flutter_bloc_thebooking_apps/extension/double_extension.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/onboarding_cubit.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/onboarding_state.dart';
+import 'package:flutter_bloc_thebooking_apps/util/util.dart';
 
 class OnboardingTitle extends StatelessWidget {
   const OnboardingTitle({Key? key}) : super(key: key);

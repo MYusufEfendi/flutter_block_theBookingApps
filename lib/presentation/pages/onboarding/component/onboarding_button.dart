@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_thebooking_apps/extension/double_extension.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/onboarding_cubit.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/widget/primary_button.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/widget/secondary_button.dart';
+import 'package:flutter_bloc_thebooking_apps/util/util.dart';
 
 class OnboardingButton extends StatelessWidget {
   const OnboardingButton({Key? key}) : super(key: key);
