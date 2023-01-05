@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_thebooking_apps/config/config.dart';
+import 'package:flutter_bloc_thebooking_apps/extension/double_extension.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/onboarding_cubit.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/onboarding/onboarding_state.dart';
 
@@ -20,6 +21,7 @@ class OnboardingTitle extends StatelessWidget {
               style: AppFont.h3,
               textAlign: TextAlign.center,
             ),
+            8.0.height,
             Text(
               cubit.state.onboardingList[cubit.state.currentPage].description ??
                   "",

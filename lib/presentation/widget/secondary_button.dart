@@ -4,7 +4,7 @@ import 'package:flutter_bloc_thebooking_apps/config/config.dart';
 class SecondaryButton extends StatelessWidget {
   const SecondaryButton(
       {Key? key,
-      this.type = SecondaryButtonType.type1,
+      this.type = SecondaryButtonType.type3,
       required this.onPressed,
       required this.text,
       this.width = 78})

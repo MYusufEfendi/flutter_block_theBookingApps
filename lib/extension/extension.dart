@@ -1,0 +1,1 @@
+export 'package:flutter_bloc_thebooking_apps/extension/extension.dart';
