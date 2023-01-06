@@ -5,6 +5,8 @@ import 'login_cubit.dart';
 import 'login_state.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
