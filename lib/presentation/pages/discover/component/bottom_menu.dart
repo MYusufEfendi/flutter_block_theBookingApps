@@ -26,7 +26,7 @@ class BottomMenu extends StatelessWidget {
             children: [
               _buildItem(
                 icon: Icons.location_on_sharp,
-                title: "Locations",
+                title: "Trips",
                 isSelected: cubit.state.selectedIndex == 0,
                 onTap: () => cubit.chengIndext(0),
               ),
