@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_thebooking_apps/data/src/img_string.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/discover/discover_view.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/pages/discover/favorite/favorite_view.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/pages.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/welcome/login/login_view.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/welcome/welcome_done/welcome_done_view.dart';
