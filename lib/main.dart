@@ -1,16 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_thebooking_apps/data/src/img_string.dart';
+import 'package:flutter_bloc_thebooking_apps/presentation/pages/discover/detail/detail_view.dart';
 import 'package:flutter_bloc_thebooking_apps/presentation/pages/discover/discover_view.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/pages/discover/favorite/favorite_view.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/pages/pages.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/pages/welcome/login/login_view.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/pages/welcome/welcome_done/welcome_done_view.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/pages/welcome/welcome_view.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/widget/disable_button.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/widget/primary_button.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/widget/secondary_button.dart';
-import 'package:flutter_bloc_thebooking_apps/presentation/widget/square_checkbox.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -19,22 +11,22 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(360, 812),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context,child) {
-        return MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            fontFamily: 'Poppins',
-            primarySwatch: Colors.blue,
-          ),
-          home: const DiscoverPage(),
-        );
-      }
-    );
+        designSize: const Size(360, 812),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return MaterialApp(
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              fontFamily: 'Poppins',
+              primarySwatch: Colors.blue,
+            ),
+            home: const DetailPage(),
+          );
+        });
   }
 }
